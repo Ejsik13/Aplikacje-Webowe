@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: linear-gradient(to bottom right, #3e46f0, #a538eb, #e038eb);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  position: absolute;
+  width: 70vw;
+  height: 80vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.list {
+  display: inline-block;
+  text-align: left;
+  color: white;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  color: purple;
+}
+
+#b1 {
+  color: rgb(241, 253, 69);
+}
+
+#b2 {
+  color: rgb(255, 148, 174);
+}
+
+#b3 {
+  color: #38eb7d;
+}
+
+#b1:hover,
+#b2:hover,
+#b3:hover {
+  color: red;
+}
+
+#b1:active,
+#b2:active,
+#b3:active {
+  color: green;
+}
+
+.container1 {
+  position: absolute;
+  width: 70vw;
+  height: 80vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.article {
+  text-align: center;
+}
+
+.nameauthor {
+  width: 100%;
+  margin-top: 30px;
+  height: 10vh;
+}
+
+.author {
+  text-align: center;
+  color: white;
+}
+
+p {
+  text-align: justify;
+}
+
+img {
+  margin-top: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  width: 300px;
+}
+
+.table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+}
+
+table,
+th,
+td {
+  background-color: rgb(245, 177, 255);
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+.title {
+  text-align: center;
+}
+
+.parent {
+  min-width: 360px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+
+  margin: 10px;
+  float: left;
+}
+
+.square:nth-child(3) {
+  clear: both;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.image {
+  background-image: url("./../img/elephant.png");
+  background-size: cover;
+}
