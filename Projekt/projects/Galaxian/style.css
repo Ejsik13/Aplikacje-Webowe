@@ -1,0 +1,15 @@
+body{
+  background-color: rgb(56, 55, 55);
+}
+canvas {
+  border: 1px solid black;
+  width: 70vw;
+  height: 70vw;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: black;
+}
+

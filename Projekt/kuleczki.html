@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kuleczki</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo-tech-ejs.png" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <!-- Zawartość strony -->
+    <div class="content">
+      <!-- Nawigacja -->
+      <nav class="navbar">
+        <div class="container">
+          <a href="./index.html" class="logo"
+            ><img class="img-logo" src="./images/tech-ejs-logo.png"
+          /></a>
+          <ul class="nav-menu">
+            <li><a href="./index.html">Strona główna</a></li>
+            <li><a href="./informatyka.html">Informatyka</a></li>
+            <li><a href="./budownictwo.html">Budownictwo</a></li>
+            <li class="dropdown">
+              <a href="./projekty.html">Projekty</a>
+              <ul class="dropdown-menu">
+                <li><a href="./galaxian.html">Galaxian</a></li>
+                <li><a href="./kuleczki.html">Kuleczki</a></li>
+                <li><a href="./snake.html">Snake</a></li>
+                <li><a href="./dratewka.html">Dratewka</a></li>
+                <li><a href="./saper.html">Saper</a></li>
+              </ul>
+            </li>
+            <li><a href="./kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <header class="header">
+        <h1>Kuleczki</h1>
+      </header>
+
+      <section class="section" id="sec1">
+        <div id="wrap">
+          <iframe
+            src="./projects/Kuleczki/index.html"
+            title="Kuleczki Game"
+            id="frame"
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="section light1">
+        <div class="services">
+          <div class="service">
+            <p>
+              Jest to kolejna gra napisana pierwotnie w TypeScript i
+              przekonwertowana do JavaScript. Logika tej gry jest prosta.
+              Użytkownik klikając myszką dowolną kuleczkę, ma za zadanie ustawić
+              5 kuleczek jednego koloru w szeregu, pionie lub po skosie. Po
+              ustawieniu kulki znikają i użytkownik dostaje punkty za "zbicie".
+              Utrudnieniem gry jest to, że po każdym ruchu na planszy przybywają
+              dodatkowe 3 kulki, których kolor jest wcześniej znany. Użytkownik
+              również nie może przenieść danej kulki, jeśli ścieżka do
+              destynacji, jest zablokowana przez inne kulki.
+              <br />
+              Grę można przetestować klikając w obrazek. Gra działa na komputerze i urządzeniach mobilnych.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <p>© 2024 Strona portfolio należy do Emil Siatka.</p>
+    </footer>
+  </body>
+</html>

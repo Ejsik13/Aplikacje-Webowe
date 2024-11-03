@@ -1,0 +1,171 @@
+@font-face {
+  font-family: "PressStart2P";
+  src: url("./fonts/PressStart2P.ttf");
+}
+
+* {
+  cursor: none;
+}
+
+*:focus {
+  outline: none;
+  border: none;
+}
+
+body {
+  font-family: "PressStart2P";
+  background-color: #161517;
+  color: white;
+  cursor: none;
+  width: 98vw;
+  height: 89vh;
+}
+
+.dratewka-game {
+  margin: 0 auto;
+  position: relative;
+  width: 600px;
+  margin-top: 60px;
+}
+
+img {
+  border: 2px solid white;
+  width: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.input {
+  font-family: "PressStart2P";
+  height: 20px;
+  width: 160px;
+  background-color: #161517;
+  margin-left: 10px;
+  color: white;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+}
+
+#infoinput {
+  line-height: 25px;
+}
+
+#itemsinfo {
+  line-height: 30px;
+}
+
+#mute {
+  width: 40px;
+  height: 40px;
+  background-image: url("./img/unmute.png");
+  background-size: 40px;
+  position: absolute;
+  margin: 0;
+  left: 15px;
+  top: 15px;
+  z-index: 10;
+  margin: 0;
+  cursor: auto;
+
+  background-repeat: no-repeat;
+}
+
+#firstpicture {
+  background-image: url("./img/czołówka.jpg");
+  width: 65vw;
+  height: 88vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 0;
+  z-index: 10;
+  background-color: #012c03;
+}
+
+#firstintro {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 0px;
+  text-align: justify;
+}
+
+#secondintro {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 60px;
+  text-align: justify;
+}
+
+#image {
+  position: static;
+}
+
+#compass {
+  width: 250px;
+  height: 117px;
+  background-color: red;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./img/kompas.bmp");
+  position: relative;
+  float: right;
+  top: 54px;
+}
+
+#hidenorth {
+  width: 13px;
+  height: 12px;
+  background-color: black;
+  position: absolute;
+  left: 462px;
+  top: 87px;
+  z-index: 10;
+}
+
+#hidesouth {
+  width: 13px;
+  height: 14px;
+  background-color: black;
+  position: absolute;
+  left: 467px;
+  top: 188px;
+  z-index: 10;
+}
+
+#hidewest {
+  width: 13px;
+  height: 14px;
+  background-color: black;
+  position: absolute;
+  left: 364px;
+  top: 120px;
+  z-index: 10;
+}
+
+#hideeast {
+  width: 13px;
+  height: 14px;
+  background-color: black;
+  position: absolute;
+  left: 574px;
+  top: 120px;
+  z-index: 10;
+}
+
+#endgame {
+  background-image: url("./img/koniec.jpg");
+  width: 65vw;
+  height: 88vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 0;
+  z-index: 10;
+  top: 25px;
+  background-color: #00eaff;
+}

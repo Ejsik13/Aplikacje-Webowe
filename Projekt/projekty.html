@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projekty</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo-tech-ejs.png" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <!-- Zawartość strony -->
+    <div class="content">
+      <!-- Nawigacja -->
+      <nav class="navbar">
+        <div class="container">
+          <a href="./index.html" class="logo"
+            ><img class="img-logo" src="./images/tech-ejs-logo.png"
+          /></a>
+          <ul class="nav-menu">
+            <li><a href="./index.html">Strona główna</a></li>
+            <li><a href="./informatyka.html">Informatyka</a></li>
+            <li><a href="./budownictwo.html">Budownictwo</a></li>
+            <li class="dropdown">
+              <a href="./projekty.html">Projekty</a>
+              <ul class="dropdown-menu">
+                <li><a href="./galaxian.html">Galaxian</a></li>
+                <li><a href="./kuleczki.html">Kuleczki</a></li>
+                <li><a href="./snake.html">Snake</a></li>
+                <li><a href="./dratewka.html">Dratewka</a></li>
+                <li><a href="./saper.html">Saper</a></li>
+              </ul>
+            </li>
+            <li><a href="./kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Sekcja o firmie -->
+      <header class="header">
+        <h2>Projekty</h2>
+        <p>
+          Na tej stronie są dostępne niektóre z moich projektów, które wykonałem
+          w cyklu edukacyjnym.
+        </p>
+      </header>
+
+      <!-- Sekcja gier -->
+      <section class="section light">
+        <div class="services">
+          <div class="service service-select">
+            <a href="./galaxian.html" class="gamelogo"
+              ><img src="./images/galaxian.png" style="width: 30%"
+            /></a>
+          </div>
+          <div class="service">
+            <h3>GALAXIAN</h3>
+            <p>
+              Gra, która jest aktualnie moim "oczkiem w głowie", gdyż
+              poświęciłem na nią bardzo dużo czasu, aby finalny efekt był
+              dokładnym odwzorowaniem gry o tym samym tytule, która postała na
+              konsolę Atari. <br />
+              Gra została napisana przeze mnie w TypeScript z wykorzystaniem
+              Canvas, a następnie przekompilowana do kodu JavaScript. </p><p>
+              Grę można przetestować klikając w obrazek. Gra działa tylko na
+              komputerze.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section light">
+        <div class="services">
+          <div class="service service-select">
+            <a href="./dratewka.html" class="gamelogo"
+              ><img src="./images/dratewka.png" style="width: 30%"
+            /></a>
+          </div>
+          <div class="service">
+            <h3>Dratewka the Shoemaker</h3>
+            <p>
+              Jest to kolejna gra, której pierwowzór powstał na konsolę Atari
+              8-bit. Gra jest jednym z wielu projektów, które napisałem w
+              technikum. Logika gry może wydawać się skomplikowana, dlatego jest
+              ona dostępna w linku
+              <a href="./src/Dratewka-logika.pdf" download="Dratewka-logika"
+                >Dratewka logika</a
+              >
+            </p><p>
+              Grę można przetestować klikając w obrazek. Gra działa tylko na
+              komputerze.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section light">
+        <div class="services">
+          <div class="service service-select">
+            <a href="./kuleczki.html" class="gamelogo"
+              ><img src="./images/kuleczki.png" style="width: 30%"
+            /></a>
+          </div>
+          <div class="service">
+            <h3>Kuleczki</h3>
+            <p>
+              Jest to kolejna gra napisana pierwotnie w TypeScript i
+              przekonwertowana do JavaScript. Logika tej gry jest prosta.
+              Użytkownik klikając myszką dowolną kuleczkę, ma za zadanie ustawić
+              5 kuleczek jednego koloru w szeregu, pionie lub po skosie. Po
+              ustawieniu kulki znikają i użytkownik dostaje punkty za "zbicie".
+              Utrudnieniem gry jest to, że po każdym ruchu na planszy przybywają
+              dodatkowe 3 kulki, których kolor jest wcześniej znany. Użytkownik
+              również nie może przenieść danej kulki, jeśli ścieżka do
+              destynacji, jest zablokowana przez inne kulki.
+            </p><p>
+              Grę można przetestować klikając w obrazek. Gra działa tylko na
+              komputerze.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section light">
+        <div class="services">
+          <div class="service service-select">
+            <a href="./snake.html" class="gamelogo"
+              ><img src="./images/snake.png" style="width: 30%"
+            /></a>
+          </div>
+          <div class="service">
+            <h3>Snake</h3>
+            <p>
+              Jest to popularna gra, w której użytkownik sterując strzałkami na
+              klawiaturze, ma za zadanie zbierać jabłka, które wydłużają węża o
+              jedną jednostkę długości po każdym zebraniu jabłka. Użytkownik
+              musi przy tym uważać aby nie wpaść w ściany lub w tułów węża.
+            </p><p>
+              Grę można przetestować klikając w obrazek. Gra działa tylko na
+              komputerze.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section light">
+        <div class="services">
+          <div class="service service-select">
+            <a href="./saper.html" class="gamelogo"
+              ><img src="./images/saper.png" style="width: 30%"
+            /></a>
+          </div>
+          <div class="service">
+            <h3>Saper</h3>
+            <p>
+              Kolejna znana wszystkim gra, w której za zadanie mamy odznaczyć
+              wszystie pola wolne od bomby. Logika gry jest taka sama jak
+              oryginału. Liczby pokazują ile bomb znajduje się wokół danego
+              pola. Prawym przyciskiem myszy możemy zaznaczyć flagę na polu, na
+              którym podejrzewamy że jest ładunek. Dodatkowymi funkcjami gry
+              jest wybór rozmiaru planszy i ilości bomb, oraz ranking czasów
+              graczy, który dla każdego trybu jest idywidualny.
+              </p><p>
+              Gra działa na komputerze i urządzeniach mobilnych.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Stopka -->
+    <footer class="footer">
+      <p>© 2024 Strona portfolio należy do Emil Siatka.</p>
+    </footer>
+
+    <!-- Skrypt JavaScript do slidera -->
+  </body>
+</html>

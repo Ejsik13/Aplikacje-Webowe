@@ -1,0 +1,128 @@
+body {
+  background: rgb(126,197,255);
+  background: radial-gradient(circle, rgba(126,197,255,1) 0%, rgba(135,235,255,1) 100%);
+}
+.kuleczki {
+  float: left;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.interface {
+  width: 25vh;
+  height: 60vh;
+  color: white;
+  font-size: 1.5vh;
+}
+.board {
+  margin: 0;
+  float: left;
+  width: 60vh;
+  height: 60vh;
+  /* box-sizing: border-box; */
+   border: 0.6vh solid black;
+  border-collapse: collapse;
+  background: rgb(252,204,252);
+background: radial-gradient(circle, rgba(252,204,252,1) 0%, rgba(255,143,223,1) 100%);
+
+}
+.fieldDivRow {
+  display: flex;
+  width: 100%;
+  height: 11.1%;
+}
+.fieldDiv {
+  margin: 0;
+  text-align: center;
+  border: 0.1vh solid black;
+  width: 100%;
+  height: 100%;
+}
+
+.ball {
+  position: relative;
+  border: 0.4vh solid black;
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.selectedBall {
+  width: 80%;
+  height: 80%;
+}
+
+.suggestedPath {
+  background-color: red;
+}
+
+.acceptedPath {
+  background-color: gray;
+}
+
+.block {
+  pointer-events: none;
+}
+
+.nextBalls {
+  display: flex;
+  margin-left: -76%;
+  margin-top: 20%;
+}
+#nextBall {
+  margin: 0;
+  width: 4vh;
+  height: 4vh;
+}
+
+.endStats {
+  font-size: 2.5vh;
+  margin: 0 auto;
+  position: absolute;
+  display: flex;
+  z-index: 10;
+  width: 70vh;
+  height: 70vh;
+  background-color: aqua;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10vh;
+  border: solid black 5px;
+  background: rgb(255,182,255);
+background: radial-gradient(circle, rgba(255,182,255,1) 0%, rgba(255,116,144,1) 100%);
+border: 0.6vh solid black;
+}
+
+.endStats div {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.endStats h1 {
+  font-size: 10vh;
+}
+.endStats h2 {
+  font-size: 6vh;
+}
+.endStats h3 {
+  margin: 0;
+  font-size: 6vh;
+}
+.endStats h4 {
+  margin: 0;
+  font-size: 6vh;
+}

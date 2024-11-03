@@ -1,0 +1,120 @@
+@font-face {
+  font-family: retroFont;
+  src: url(../font/kongtext.ttf);
+}
+
+body {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 720px;
+  height: 720px;
+  margin: 0;
+  position: relative;
+  border: solid 2px white;
+}
+
+#game {
+  width: 720px;
+  height: 720px;
+  margin: 0;
+  position: absolute;
+}
+
+#results {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  width: 720px;
+  height: 55px;
+  font-size: 40px;
+  font-family: retroFont;
+}
+
+#resultsStats {
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  width: 720px;
+  height: 55px;
+  font-size: 40px;
+  font-family: retroFont;
+}
+
+#instruction {
+  width: 720px;
+  height: 720px;
+  margin: 0;
+  position: absolute;
+  background-color: black;
+  font-family: retroFont;
+  color: white;
+  text-align: center;
+}
+
+#players {
+  height: 21%;
+}
+
+#playerOneInfo {
+  border: 1px solid white;
+  width: 45%;
+  height: 100%;
+  float: left;
+  margin-left: 19px;
+  text-align: left;
+}
+#playerTwoInfo {
+  border: 1px solid white;
+  width: 45%;
+  height: 100%;
+  float: left;
+  margin-left: 30px;
+  text-align: left;
+}
+
+#playerMenuInfo {
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 1px solid white;
+  width: 60%;
+  height: 26%;
+  text-align: left;
+}
+
+h1 {
+  margin: 40px;
+  font-size: 50px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+span {
+  color: red;
+}
+
+h3 {
+  text-align: center;
+  line-height: 1.5;
+}
+
+#enter {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+}

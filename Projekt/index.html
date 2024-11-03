@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strona Główna</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo-tech-ejs.png" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <!-- Zawartość strony -->
+    <div class="content">
+      <!-- Nawigacja -->
+      <nav class="navbar">
+        <div class="container">
+          <a href="./index.html" class="logo"
+            ><img class="img-logo" src="./images/tech-ejs-logo.png"
+          /></a>
+          <ul class="nav-menu">
+            <li><a href="./index.html">Strona główna</a></li>
+            <li><a href="./informatyka.html">Informatyka</a></li>
+            <li><a href="./budownictwo.html">Budownictwo</a></li>
+            <li class="dropdown">
+              <a href="./projekty.html">Projekty</a>
+              <ul class="dropdown-menu">
+                <li><a href="./galaxian.html">Galaxian</a></li>
+                <li><a href="./kuleczki.html">Kuleczki</a></li>
+                <li><a href="./snake.html">Snake</a></li>
+                <li><a href="./dratewka.html">Dratewka</a></li>
+                <li><a href="./saper.html">Saper</a></li>
+              </ul>
+            </li>
+            <li><a href="./kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Slider -->
+      <!-- <section class="slider">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/slide1.jpg" style="width: 100%" />
+          <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/slide2.jpg" style="width: 100%" />
+          <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="images/slide3.jpg" style="width: 100%" />
+          <div class="text">Caption Three</div>
+        </div>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </section> -->
+
+      <div class="carousel">
+        <div class="carousel-slides">
+          <!-- Skopiowane ostatnie zdjęcie, aby stworzyć efekt pętli -->
+          <img src="./images/7.png" alt="Image 7" class="duplicate" />
+
+          <!-- Prawdziwe zdjęcia slidera -->
+          <img src="./images/1.png" alt="Image 1" />
+          <img src="./images/2.png" alt="Image 2" />
+          <img src="./images/3.png" alt="Image 3" />
+          <img src="./images/4.png" alt="Image 4" />
+          <img src="./images/5.png" alt="Image 5" />
+          <img src="./images/6.png" alt="Image 6" />
+          <img src="./images/7.png" alt="Image 7" />
+
+          <!-- Skopiowane pierwsze zdjęcie, aby stworzyć efekt pętli -->
+          <img src="./images/1.png" alt="Image 1" class="duplicate" />
+        </div>
+        <button class="carousel-prev" onclick="prevSlide()">&#10094;</button>
+        <button class="carousel-next" onclick="nextSlide()">&#10095;</button>
+      </div>
+
+      <!-- Sekcja o firmie -->
+      <section class="section">
+        <h2>O mnie</h2>
+        <p>
+          Cześć! Nazywam się Emil i jestem studentem Informatyki oraz
+          Budownictwa na Akademii Górniczo-Hutniczej w Krakowie. Moja pasja
+          łączy technologie cyfrowe z architekturą – marzę o projektowaniu i
+          wdrażaniu nowoczesnych systemów inteligentnych dla domów i budynków,
+          które nie tylko ułatwiają życie, ale także dbają o efektywność
+          energetyczną i bezpieczeństwo mieszkańców. W trakcie studiów rozwijam
+          swoją wiedzę zarówno w zakresie programowania, jak i inżynierii
+          budowlanej, aby w przyszłości być w stanie tworzyć zaawansowane
+          rozwiązania smart home.
+        </p>
+        <p>
+          W praktyce oznacza to zdobywanie doświadczenia w programowaniu,
+          elektronice oraz automatyce budynkowej, a także w projektowaniu
+          struktur i systemów, które będą podstawą nowoczesnych budynków. Każdy
+          projekt przybliża mnie o krok do realizacji moich ambicji i do
+          zdobycia umiejętności, które pozwolą mi wprowadzać na rynek
+          innowacyjne rozwiązania.
+        </p>
+        <p>
+          Jeśli chcesz dowiedzieć się więcej o moich projektach,
+          zainteresowaniach lub dotychczasowych osiągnięciach, kliknij na
+          dowolny kwadracik poniżej – chętnie podzielę się moimi pasjami i
+          planami na przyszłość!
+        </p>
+      </section>
+
+      <!-- Sekcja usług -->
+      <section class="section light">
+        <h2>Poznaj mnie</h2>
+        <div class="services">
+          <div class="service service-select">
+            <h3>Informatyka</h3>
+            <a href="./informatyka.html" class="gamelogo"
+              ><img src="./images/informatyka.png" style="width: 30%"
+            /></a>
+            <p>Dowiedz się więcej o mojej pasji do informatyki</p>
+          </div>
+          <div class="service service-select">
+            <h3>Budownictwo</h3>
+            <a href="./budownictwo.html" class="gamelogo"
+              ><img src="./images/budownictwo.png" style="width: 30%"
+            /></a>
+            <p>Dowiedz się więcej o mojej pasji do budownictwa</p>
+          </div>
+          <div class="service service-select2">
+            <h3>Projekty</h3>
+            <a href="./projekty.html" class="gamelogo"
+              ><img src="./images/projekty.png" style="width: 30%"
+            /></a>
+            <p>Sprawdź moje projekty gier webowych</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Stopka -->
+    <footer class="footer">
+      <p>© 2024 Strona portfolio należy do Emil Siatka.</p>
+    </footer>
+
+    <!-- Skrypt JavaScript do slidera -->
+  </body>
+</html>

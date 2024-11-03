@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saper</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./img/bomb.png" type="image/x-icon" />
+    <script src="./results.js" defer></script>
+    <script src="./saper.js" defer></script>
+  </head>
+
+  <body>
+    <div id="saper-game">
+      <form class="form">
+        <label for="height">Wysokość</label>
+        <input type="number" name="height" class="height" value="10" />
+        <label for="width">Szerokość</label>
+        <input type="number" name="width" class="width" value="10" />
+        <label for="bombs">Ilość bomb</label>
+        <input type="number" name="bombs" class="bombs" value="10" />
+        <label for="nick">Nick</label>
+        <input
+          type="text"
+          name="nick"
+          class="nick"
+          required="required"
+          placeholder="Podaj nick"
+          maxlength="20"
+          pattern="[a-zA-Z0-9]*"
+        />
+        <button class="bt" type="submit">Generuj planszę</button>
+      </form>
+      <span class="timer">0</span>
+      <span class="bombstofinish">0</span>
+      <div class="srodek">
+        <div class="map-container"></div>
+      </div>
+    </div>
+    <div class="result-container">
+      <h1>Wyniki</h1>
+      <table>
+        <thead>
+          <th>Nickname</th>
+          <th>Czas</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </body>
+</html>
