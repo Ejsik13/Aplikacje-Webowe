@@ -1,0 +1,520 @@
+/* Podstawowe style */
+body {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #e4e4e4;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Styl głównej zawartości */
+.content {
+  min-height: calc(100vh - 70px); /* 100vh minus wysokość stopki */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Podstawowy styl nawigacji */
+.navbar {
+  background-color: #333;
+  padding: 1em;
+  position: relative;
+  z-index: 10; /* Wyższy indeks, aby menu było nad sliderem */
+}
+.navbar .logo {
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+  margin-right: 1em;
+}
+
+img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Umożliwia uwzględnienie paddingu w szerokości */
+}
+
+.img-logo {
+  all: initial;
+  width: 15vw;
+}
+.nav-menu {
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 1em;
+}
+.nav-menu a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.nav-menu a:hover {
+  background-color: #555;
+}
+
+.nav-menu li {
+  position: relative;
+  width: 20%; /* Szerokość kwadratu */
+  height: 40px; /* Wysokość kwadratu */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+}
+
+/* Styl dla menu rozwijanego */
+.dropdown-menu {
+  display: none; /* Ukryj podmenu domyślnie */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #696969;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 4px;
+  min-width: 150px;
+  z-index: 10;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+.dropdown-menu li {
+  width: 100%;
+  align-items: center;
+}
+.dropdown-menu a {
+  color: white;
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+}
+.dropdown-menu a:hover {
+  background-color: #555;
+}
+
+/* Pokaż menu przy najechaniu kursorem */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Dostosowanie na urządzeniach mobilnych */
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .dropdown-menu {
+    position: static;
+  }
+
+  .img-logo {
+    width: 45vw;
+  }
+}
+
+/* Styl otwartego menu rozwijanego na urządzeniach mobilnych */
+.dropdown.open .dropdown-menu {
+  display: block;
+}
+
+.header {
+  background-color: #007bff;
+  color: white;
+  padding: 2em 0;
+  text-align: center;
+}
+.section {
+  padding: 2em 0;
+  text-align: center;
+}
+.section.light {
+  background-color: #f4f4f4;
+  background-color: #e4e4e4;
+}
+.section.light1 {
+  background-color: #f4f4f4;
+  margin-top: 0;
+  padding-top: 0;
+}
+.services {
+  display: flex;
+  justify-content: space-around;
+  gap: 1em;
+}
+.service {
+  flex: 1;
+  padding: 1em;
+  border: 1px solid #c0c0c0;
+  transition: transform 0.3s ease;
+  background-color: #eeeef3;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+.service-select:hover {
+  transform: translateY(-10px) scale(1.05);
+  background-color: #c0c0c0;
+}
+.service-select2:hover {
+  transform: translateX(-20px) scale(1.05);
+  background-color: #c0c0c0;
+}
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  height: 50px; /* Ustalona wysokość stopki */
+  margin-top: auto; /* Dzięki temu stopka przylega do dołu */
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* FRAME GALAXIAN */
+#sec1 {
+  width: 100%;
+  height: 900px;
+  position: relative;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top: 40px;
+}
+
+#wrap {
+  width: 900px;
+  height: 900px;
+  padding: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%);
+}
+#frame {
+  width: calc(100% - 10px);
+  height: 900px;
+  zoom: 0.95;
+  -moz-transform: scale(0.95);
+  -moz-transform-origin: 0 0;
+  border: 5px solid black;
+}
+
+/* frame saper */
+#sec2 {
+  width: 100%;
+  height: 900px;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#wrap2 {
+  width: 1200px;
+  height: 1100px;
+  padding: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  margin-bottom: 0;
+}
+#frame2 {
+  width: calc(100% - 10px);
+  height: 1150px;
+  zoom: 0.75;
+  -moz-transform: scale(0.75);
+  -moz-transform-origin: 0 0;
+  border: 5px solid black;
+}
+
+@media (max-width: 768px) {
+  .services {
+    flex-direction: column;
+  }
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .prev,
+  .next {
+    font-size: 18px;
+  }
+  #wrap {
+    width: 100%;
+    height: 400px;
+    padding: 0;
+    overflow: hidden;
+  }
+  #wrap2 {
+    width: 100%;
+    height: 400px;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  #sec1 {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 40px;
+  }
+  
+
+  #sec2 {
+    width: 100%;
+    height:400px;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  #frame {
+    zoom: 0.40;
+    height:calc(100% - 10px);
+
+  }
+  #frame2 {
+    zoom: 0.25;
+    height: calc(100% - 10px);
+
+  }
+}
+
+/* Stylizacja sekcji formularza kontaktowego */
+.section.contact {
+  padding: 40px;
+  background-color: #eeeef3;
+  width: 100%;
+  max-width: 700px; /* Maksymalna szerokość formularza */
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Umożliwia uwzględnienie paddingu w szerokości */
+}
+
+/* Nagłówek formularza */
+.section.contact h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Stylizacja pól formularza */
+.section.contact label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.section.contact input[type="text"],
+.section.contact input[type="email"],
+.section.contact select,
+.section.contact textarea {
+  width: calc(100% - 20px); /* Ustalanie szerokości z uwzględnieniem paddingu */
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+  box-sizing: border-box; /* Umożliwia uwzględnienie paddingu w szerokości */
+  transition: border-color 0.3s ease;
+}
+
+.section.contact input[type="text"]:focus,
+.section.contact input[type="email"]:focus,
+.section.contact select:focus,
+.section.contact textarea:focus {
+  border-color: #555;
+  outline: none;
+}
+
+/* Stylizacja przycisku */
+.section.contact button[type="submit"] {
+  width: calc(100% - 20px); /* Ustalanie szerokości z uwzględnieniem paddingu */
+  padding: 12px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.section.contact button[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Stylizacja komunikatu o odpowiedzi */
+#formResponse {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  width: 100%; /* Szerokość komunikatu zgodna z formularzem */
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+  .section.contact {
+    padding: 20px; /* Mniejsze odstępy na małych ekranach */
+  }
+
+  .section.contact h2 {
+    font-size: 20px; /* Mniejszy nagłówek */
+  }
+
+  .section.contact input[type="text"],
+  .section.contact input[type="email"],
+  .section.contact select,
+  .section.contact textarea {
+    font-size: 14px; /* Mniejsza czcionka w polach */
+  }
+
+  .section.contact button[type="submit"] {
+    font-size: 16px; /* Mniejszy przycisk */
+  }
+}
+
+/* Stylizacja głównego kontenera karuzeli */
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Stylizacja sekcji slajdów */
+.carousel-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Stylizacja obrazów w karuzeli */
+.carousel-slides img {
+  all: initial;
+  min-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Przyciski do nawigacji */
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+
+/* Responsywność przycisków na mniejszych ekranach */
+@media (max-width: 768px) {
+  .carousel-prev,
+  .carousel-next {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

@@ -1,0 +1,129 @@
+body {
+  background-image: url("./img/Foreground_Fog.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 300%;
+
+  background-repeat: no-repeat;
+  display: flex;
+  margin: 0;
+}
+
+#saper-game {
+  margin-top: 70px;
+  width: 80%;
+  text-align: center;
+  line-height: 30px;
+}
+
+.offClick {
+  pointer-events: none;
+}
+
+.bt {
+  font-family: Comic Sans MS;
+  padding: 7px;
+  margin-top: 30px;
+}
+
+input {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.map-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  left: 50%;
+  margin-left: -160px;
+  padding-bottom: 200px;
+}
+
+.srodek {
+  margin: 0 auto;
+  position: relative;
+  margin-top: 40px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  text-align: center;
+  font-family: Comic Sans MS;
+}
+
+.cover {
+  background-image: url("./img/klepa.png");
+  background-size: cover;
+}
+
+.empty {
+  background-color: rgb(192, 192, 192);
+}
+
+.allbombs {
+  background-image: url("./img/pbomb.png");
+  background-size: cover;
+}
+
+.hitbomb {
+  background-image: url("./img/bomb.png");
+  background-size: cover;
+}
+
+.flag {
+  background-image: url("./img/flaga.png");
+  background-size: cover;
+}
+
+.question {
+  background-image: url("./img/pyt.png");
+  background-size: cover;
+}
+
+span {
+  display: block;
+  color: white;
+  font-family: Comic Sans MS;
+  margin-bottom: 5px;
+}
+
+label {
+  color: white;
+  font-family: Comic Sans MS;
+}
+
+.result-container {
+  margin-top: 8%;
+  color: white;
+  font-family: Comic Sans MS;
+  width: 250px;
+  text-align: center;
+}
+
+form {
+  margin-bottom: 30px;
+}
+
+table {
+  margin: 0 auto;
+  width: 100%;
+}
+th {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+}
+
+td {
+  width: 100%;
+  text-align: center;
+}
